@@ -20,8 +20,7 @@ public class TicketController {
     public Integer bookTicket(@RequestBody BookTicketEntryDto bookTicketEntryDto){
 
         try {
-            Integer ticketId = ticketService.bookTicket(bookTicketEntryDto);
-            return ticketId;
+            return ticketService.bookTicket(bookTicketEntryDto);
         }catch (Exception e) {
             return null;
         }
